@@ -23,7 +23,7 @@ export default function Login({ onLogin, onToggle }) {
   };
 
   return (
-    <div style={styles.container} className="fade-in">
+    <div style={styles.container} className="fade-in auth-background">
       <form onSubmit={handleSubmit} style={styles.form} className="slide-in">
         <h2 style={styles.title}>🤖 Chatbot Platform</h2>
         <p style={styles.subtitle}>Sign in to continue</p>

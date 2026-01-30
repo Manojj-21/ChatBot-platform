@@ -22,7 +22,7 @@ export default function Register({ onLogin, onToggle }) {
   };
 
   return (
-    <div style={styles.container} className="fade-in">
+    <div style={styles.container} className="fade-in auth-background">
       <form onSubmit={handleSubmit} style={styles.form} className="slide-in">
         <h2 style={styles.title}>🚀 Join Us</h2>
         <p style={styles.subtitle}>Create your account</p>

@@ -68,8 +68,8 @@ export default function Chat({ project, onBack }) {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.header}>
+    <div style={styles.container} className="dashboard-background">
+      <div style={styles.header} className="navbar-black">
         <button onClick={onBack} style={styles.backBtn}>← Back</button>
         <h2>{project.name}</h2>
         <button onClick={() => setShowPrompts(!showPrompts)} style={styles.promptBtn}>
@@ -123,8 +123,8 @@ export default function Chat({ project, onBack }) {
 }
 
 const styles = {
-  container: { display: 'flex', flexDirection: 'column', height: '100vh', background: '#f5f5f5' },
-  header: { background: 'white', padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' },
+  container: { display: 'flex', flexDirection: 'column', height: '100vh' },
+  header: { padding: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 2px 4px rgba(0,0,0,0.3)' },
   backBtn: { padding: '0.5rem 1rem', background: '#6c757d', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' },
   promptBtn: { padding: '0.5rem 1rem', background: '#17a2b8', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' },
   promptPanel: { background: 'white', padding: '1rem', borderBottom: '1px solid #ddd' },

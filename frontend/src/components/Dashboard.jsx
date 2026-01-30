@@ -38,8 +38,8 @@ export default function Dashboard({ user, onLogout }) {
   }
 
   return (
-    <div style={styles.container} className="fade-in">
-      <div style={styles.header}>
+    <div style={styles.container} className="fade-in dashboard-background">
+      <div style={styles.header} className="navbar-black">
         <h1 style={styles.logo}>🤖 Chatbot Platform</h1>
         <div>
           <span style={styles.userName}>👤 {user.name}</span>
@@ -98,10 +98,10 @@ export default function Dashboard({ user, onLogout }) {
 }
 
 const styles = {
-  container: { minHeight: '100vh', background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' },
-  header: { background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', padding: '1.25rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' },
-  logo: { fontSize: '1.5rem', fontWeight: '700', color: '#667eea', margin: 0 },
-  userName: { marginRight: '1rem', fontWeight: '600', color: '#333', fontSize: '0.95rem' },
+  container: { minHeight: '100vh' },
+  header: { padding: '1.25rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.3)' },
+  logo: { fontSize: '1.5rem', fontWeight: '700', color: '#fff', margin: 0 },
+  userName: { marginRight: '1rem', fontWeight: '600', color: '#fff', fontSize: '0.95rem' },
   logoutBtn: { padding: '0.6rem 1.2rem', background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', color: 'white', border: 'none', borderRadius: '8px', fontWeight: '600' },
   content: { padding: '2.5rem', maxWidth: '1200px', margin: '0 auto' },
   toolbar: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' },
